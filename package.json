@@ -1,0 +1,19 @@
+{
+  "name": "brain-games-goshanprm",
+  "version": "1.0.0",
+  "description": "Hexlet Frontend JS Project Level 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goshanprm/frontend-project-lvl1.git"
+  },
+  "author": "Egor Batrakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goshanprm/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/goshanprm/frontend-project-lvl1#readme"
+}
