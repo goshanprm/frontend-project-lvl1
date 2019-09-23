@@ -1,41 +1,42 @@
 {
-	"name": "brain-games-goshanprm",
-	"version": "1.0.0",
-	"description": "Hexlet Frontend JS Project Level 1",
-	"main": "index.js",
-	"bin": {
-		"brain-games": "dist/bin/brain-games.js"
-	},
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"test": "jest",
-		"build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-		"prepublishOnly": "npm run build"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/goshanprm/frontend-project-lvl1.git"
-	},
-	"author": "Egor Batrakov",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/goshanprm/frontend-project-lvl1/issues"
-	},
-	"homepage": "https://github.com/goshanprm/frontend-project-lvl1#readme",
-	"devDependencies": {
-		"@babel/cli": "^7.6.0",
-		"@babel/core": "^7.6.0",
-		"@babel/node": "^7.6.1",
-		"@babel/preset-env": "^7.6.0",
-		"babel-eslint": "^10.0.3",
-		"eslint": "^6.4.0",
-		"eslint-config-airbnb-base": "^14.0.0",
-		"eslint-plugin-babel": "^5.3.0",
-		"eslint-plugin-import": "^2.18.2"
-	},
-	"dependencies": {
-		"readline-sync": "^1.4.10"
-	}
+  "name": "brain-games-goshanprm",
+  "version": "1.0.0",
+  "description": "Hexlet Frontend JS Project Level 1",
+  "main": "index.js",
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goshanprm/frontend-project-lvl1.git"
+  },
+  "author": "Egor Batrakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goshanprm/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/goshanprm/frontend-project-lvl1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
