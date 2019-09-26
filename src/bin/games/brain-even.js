@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import {
   welcomeEven, greeting, game,
-} from '../engine';
+} from '../../engine';
 
 welcomeEven();
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import {
   welcomeCalc, greeting, game,
-} from '../engine';
+} from '../../engine';
 
 welcomeCalc();
 
