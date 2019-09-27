@@ -6,5 +6,8 @@
 ## Brain Even: installation & launch guide:
 [![asciicast](https://asciinema.org/a/w2lELqhG0sBK1cKIZuRNiT2jG.svg)](https://asciinema.org/a/w2lELqhG0sBK1cKIZuRNiT2jG)
 ---
-## Brain Even: installation & launch guide:
+## Brain Calc: installation & launch guide:
 [![asciicast](https://asciinema.org/a/cFyLZCggcL4VknS7vDVVw4RBR.svg)](https://asciinema.org/a/cFyLZCggcL4VknS7vDVVw4RBR)
+---
+## Brain GCD: installation & launch guide:
+[![asciicast](https://asciinema.org/a/EL15f0dr0WRhL9fMvQAlW8iKW.svg)](https://asciinema.org/a/EL15f0dr0WRhL9fMvQAlW8iKW)
