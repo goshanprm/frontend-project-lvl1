@@ -12,6 +12,10 @@ export const welcomeCalc = () => {
   console.log('Welcome to the Brain Games!\nWhat is the result of the expression?\n');
 };
 
+export const welcomeGcd = () => {
+  console.log('Welcome to the Brain Games!\nFind the greatest common divisor of given numbers.\n');
+};
+
 export const greeting = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
@@ -50,6 +54,32 @@ export const game = (userName, brain, counter) => {
     if (randOperator === '*') {
       actualAnswer = parseInt(integer1, 10) * parseInt(integer2, 10);
     }
+  }
+
+  if (brain === 'gcd') {
+    const integer1 = getRandomInt(1, 100);
+    const integer2 = getRandomInt(1, 100);
+    actualQuestion = `${integer1} ${integer2}`;
+    const gcd = (num1, num2) => {
+      let divisor = 0;
+      if (num1 % num2 === 0) {
+        return num2;
+      }
+      if (num2 % num1 === 0) {
+        return num1;
+      }
+      if (num1 > num2) {
+        divisor = num2 - 1;
+      }
+      if (num2 > num1) {
+        divisor = num1 - 1;
+      }
+      for (divisor; (num1 % divisor !== 0 || num2 % divisor !== 0);) {
+        divisor -= 1;
+      }
+      return divisor;
+    };
+    actualAnswer = gcd(integer1, integer2);
   }
 
   if (counter === 3) {
