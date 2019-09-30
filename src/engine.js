@@ -20,6 +20,10 @@ export const welcomeProgression = () => {
   console.log('Welcome to the Brain Games!\nWhat number is missing in the progression?\n');
 };
 
+export const welcomePrime = () => {
+  console.log('Welcome to the Brain Games!\nAnswer "yes" if given number is prime. Otherwise answer "no".\n');
+};
+
 export const greeting = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
@@ -96,6 +100,24 @@ export const game = (userName, brain, counter) => {
     const counterOfHiddenElement = getRandomInt(2, 10);
     actualAnswer = integer + (diff * counterOfHiddenElement);
     actualQuestion = progression.replace(`${actualAnswer}`, '..');
+  }
+
+  if (brain === 'prime') {
+    actualQuestion = getRandomInt(1, 100);
+    const isPrime = (num) => {
+      for (let div = 2; div < num; div += 1) {
+        if (num % div === 0) {
+          return false;
+        }
+      }
+      return true;
+    };
+    if (isPrime(actualQuestion) === true) {
+      actualAnswer = 'yes';
+    }
+    if (isPrime(actualQuestion) === false) {
+      actualAnswer = 'no';
+    }
   }
 
   if (counter === 3) {

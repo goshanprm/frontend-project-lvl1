@@ -14,3 +14,6 @@
 ---
 ## Brain Progression: installation & launch guide:
 [![asciicast](https://asciinema.org/a/SNHQzWTIVRbG2lnxqCWS1gGle.svg)](https://asciinema.org/a/SNHQzWTIVRbG2lnxqCWS1gGle)
+---
+## Brain Prime: installation & launch guide:
+[![asciicast](https://asciinema.org/a/AYIzQcdDJSZDdl673nwjuVlxp.svg)](https://asciinema.org/a/AYIzQcdDJSZDdl673nwjuVlxp)
