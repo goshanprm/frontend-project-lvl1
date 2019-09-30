@@ -2,6 +2,12 @@
   "name": "brain-games-goshanprm",
   "version": "1.0.0",
   "description": "Hexlet Frontend JS Project Level 1",
+  "keywords": [
+    "hexlet",
+    "braingames",
+    "egorbatrakov",
+    "goshanprm"
+  ],
   "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
