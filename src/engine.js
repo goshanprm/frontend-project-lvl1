@@ -16,6 +16,10 @@ export const welcomeGcd = () => {
   console.log('Welcome to the Brain Games!\nFind the greatest common divisor of given numbers.\n');
 };
 
+export const welcomeProgression = () => {
+  console.log('Welcome to the Brain Games!\nWhat number is missing in the progression?\n');
+};
+
 export const greeting = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
@@ -80,6 +84,18 @@ export const game = (userName, brain, counter) => {
       return divisor;
     };
     actualAnswer = gcd(integer1, integer2);
+  }
+
+  if (brain === 'progression') {
+    const integer = getRandomInt(1, 100);
+    const diff = getRandomInt(2, 11);
+    let progression = `${integer}`;
+    for (let i = 1; i <= 9; i += 1) {
+      progression = `${progression} ${integer + (diff * i)}`;
+    }
+    const counterOfHiddenElement = getRandomInt(2, 10);
+    actualAnswer = integer + (diff * counterOfHiddenElement);
+    actualQuestion = progression.replace(`${actualAnswer}`, '..');
   }
 
   if (counter === 3) {
