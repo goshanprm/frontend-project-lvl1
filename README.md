@@ -11,3 +11,6 @@
 ---
 ## Brain GCD: installation & launch guide:
 [![asciicast](https://asciinema.org/a/EL15f0dr0WRhL9fMvQAlW8iKW.svg)](https://asciinema.org/a/EL15f0dr0WRhL9fMvQAlW8iKW)
+---
+## Brain Progression: installation & launch guide:
+[![asciicast](https://asciinema.org/a/SNHQzWTIVRbG2lnxqCWS1gGle.svg)](https://asciinema.org/a/SNHQzWTIVRbG2lnxqCWS1gGle)
