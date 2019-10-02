@@ -1,6 +1,6 @@
 # Brain Games by Egor Batrakov
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/dc61077e6bf4170e373d/maintainability)](https://codeclimate.com/github/goshanprm/frontend-project-lvl1/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/dc61077e6bf4170e373d/test_coverage)](https://codeclimate.com/github/goshanprm/frontend-project-lvl1/test_coverage)
 [![Build Status](https://travis-ci.org/goshanprm/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/goshanprm/frontend-project-lvl1)
 ---
 ## Brain Even: installation & launch guide:
