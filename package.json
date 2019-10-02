@@ -8,7 +8,6 @@
     "egorbatrakov",
     "goshanprm"
   ],
-  "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/games/brain-even.js",
