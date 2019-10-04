@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-import {
-  welcomePrime, greeting, game,
-} from '../../engine';
+import { gamePrime } from '../../engine';
 
-welcomePrime();
-
-const userName = greeting();
-
-game(userName, 'prime', 0);
+gamePrime();

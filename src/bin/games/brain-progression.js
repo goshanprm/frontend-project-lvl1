@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-import {
-  welcomeProgression, greeting, game,
-} from '../../engine';
+import { gameProgression } from '../../engine';
 
-welcomeProgression();
-
-const userName = greeting();
-
-game(userName, 'progression', 0);
+gameProgression();

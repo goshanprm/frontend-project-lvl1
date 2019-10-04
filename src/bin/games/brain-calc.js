@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-import {
-  welcomeCalc, greeting, game,
-} from '../../engine';
+import { gameCalc } from '../../engine';
 
-welcomeCalc();
-
-const userName = greeting();
-
-game(userName, 'calc', 0);
+gameCalc();
