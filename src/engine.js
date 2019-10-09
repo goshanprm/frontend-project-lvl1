@@ -1,32 +1,33 @@
-import { welcome, greeting } from './greetings';
-import { game } from './game';
+import { car, cdr } from '@hexlet/pairs';
+import readlineSync from '.';
 
-export const gameEven = () => {
-  welcome('Answer "yes" if the number is even, otherwise answer "no".');
-  const userName = greeting();
-  game(userName, 'even', 0);
-};
+export const numberOfRounds = 3;
 
-export const gameCalc = () => {
-  welcome('What is the result of the expression?');
-  const userName = greeting();
-  game(userName, 'calc', 0);
-};
+export const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-export const gameGcd = () => {
-  welcome('Find the greatest common divisor of given numbers.');
-  const userName = greeting();
-  game(userName, 'gcd', 0);
-};
+export const game = (userName, typeOfGame, round) => {
+  let result = '';
 
-export const gameProgression = () => {
-  welcome('What number is missing in the progression?');
-  const userName = greeting();
-  game(userName, 'progression', 0);
-};
+  if (round === 0) {
+    result = `Congratulations, ${userName}!`;
+    console.log(result);
+    return result;
+  }
 
-export const gamePrime = () => {
-  welcome('Answer "yes" if given number is prime. Otherwise answer "no".');
-  const userName = greeting();
-  game(userName, 'prime', 0);
+  const gameData = typeOfGame();
+  const actualQuestion = car(gameData);
+  const actualAnswer = cdr(gameData);
+
+  console.log(`Question: ${actualQuestion}`);
+  const answer = readlineSync.question('Your answer: ');
+
+  if (answer !== String(actualAnswer)) {
+    result = `'${answer}' is wrong answer ;(. Correct answer was '${actualAnswer}'.\nLet's try again, ${userName}!`;
+    console.log(result);
+    return result;
+  }
+
+  result = 'Correct!';
+  console.log(result);
+  return game(userName, typeOfGame, round - 1);
 };
