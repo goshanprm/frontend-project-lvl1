@@ -1,8 +1,7 @@
 import { cons } from '@hexlet/pairs';
-import { numberOfRounds, getRandomInt, game } from '../engine';
-import { welcome, greeting } from '../greetings';
+import { getRandomInt, playbackOfGame } from '../engine';
 
-const rulesOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const descriptionOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   for (let div = 2; div < num; div += 1) {
@@ -13,15 +12,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const gamePrime = () => {
+const generatedGameData = () => {
   const actualQuestion = getRandomInt(1, 100);
   const actualAnswer = isPrime(actualQuestion) ? 'yes' : 'no';
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
 };
 
-export default () => {
-  welcome(rulesOfGame);
-  const name = greeting();
-  game(name, gamePrime, numberOfRounds);
-};
+export default () => playbackOfGame(descriptionOfGame, generatedGameData);

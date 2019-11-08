@@ -1,10 +1,9 @@
 import { cons } from '@hexlet/pairs';
-import { numberOfRounds, getRandomInt, game } from '../engine';
-import { welcome, greeting } from '../greetings';
+import { getRandomInt, playbackOfGame } from '../engine';
 
-const rulesOfGame = 'What is the result of the expression?';
+const descriptionOfGame = 'What is the result of the expression?';
 
-const gameCalc = () => {
+const generatedGameData = () => {
   const integer1 = getRandomInt(1, 100);
   const integer2 = getRandomInt(1, 100);
   const arr = ['+', '-', '*'];
@@ -24,8 +23,4 @@ const gameCalc = () => {
   return gameData;
 };
 
-export default () => {
-  welcome(rulesOfGame);
-  const name = greeting();
-  game(name, gameCalc, numberOfRounds);
-};
+export default () => playbackOfGame(descriptionOfGame, generatedGameData);
