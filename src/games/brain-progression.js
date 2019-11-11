@@ -1,21 +1,27 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomInt, playbackOfGame } from '../engine';
+import playGame from '../engine';
+import getRandomInt from '../utils';
 
 const descriptionOfGame = 'What number is missing in the progression?';
 
+const valueMin = 1;
+const valueMax = 100;
+const diffMin = 2;
+const diffMax = 11;
+const progressionLength = 10;
+
 const generatedGameData = () => {
-  const integer = getRandomInt(1, 100);
-  const diff = getRandomInt(2, 11);
+  const integer = getRandomInt(valueMin, valueMax);
+  const diff = getRandomInt(diffMin, diffMax);
   let progression = '';
-  const progressionLength = 9;
-  for (let i = 0; i <= progressionLength; i += 1) {
+  for (let i = 0; i <= progressionLength - 1; i += 1) {
     progression = `${progression} ${integer + (diff * i)}`;
   }
-  const counterOfHiddenElement = getRandomInt(2, 10);
+  const counterOfHiddenElement = getRandomInt(0, progressionLength - 1);
   const actualAnswer = integer + (diff * counterOfHiddenElement);
   const actualQuestion = progression.replace(`${actualAnswer}`, '..');
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
 };
 
-export default () => playbackOfGame(descriptionOfGame, generatedGameData);
+export default () => playGame(descriptionOfGame, generatedGameData);

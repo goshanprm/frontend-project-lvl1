@@ -1,11 +1,9 @@
 import { car, cdr } from '@hexlet/pairs';
-import readlineSync from '.';
+import readlineSync from 'readline-sync';
 
 const numberOfRounds = 3;
 
-export const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-const playbackOfRounds = (userName, generatedGameData, round) => {
+const playRounds = (userName, generatedGameData, round) => {
   let result = '';
 
   if (round === 0) {
@@ -29,14 +27,14 @@ const playbackOfRounds = (userName, generatedGameData, round) => {
 
   result = 'Correct!';
   console.log(result);
-  return playbackOfRounds(userName, generatedGameData, round - 1);
+  return playRounds(userName, generatedGameData, round - 1);
 };
 
-export const playbackOfGame = (descriptionOfGame, generatedGameData) => {
+export default (descriptionOfGame, generatedGameData) => {
   console.log(`Welcome to the Brain Games!\n${descriptionOfGame}\n`);
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
 
-  playbackOfRounds(name, generatedGameData, numberOfRounds);
+  playRounds(name, generatedGameData, numberOfRounds);
 };
