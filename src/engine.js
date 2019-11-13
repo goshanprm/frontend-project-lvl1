@@ -6,10 +6,10 @@ const roundsCount = 3;
 export default (descriptionOfGame, generatedGameData) => {
   console.log(`Welcome to the Brain Games!\n${descriptionOfGame}\n`);
 
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!\n`);
 
-  const playRounds = (userName, round) => {
+  const playRounds = (round) => {
     let result = '';
 
     if (round === 0) {
@@ -33,8 +33,8 @@ export default (descriptionOfGame, generatedGameData) => {
 
     result = 'Correct!';
     console.log(result);
-    return playRounds(userName, round - 1);
+    return playRounds(round - 1);
   };
 
-  playRounds(name, roundsCount);
+  playRounds(roundsCount);
 };
