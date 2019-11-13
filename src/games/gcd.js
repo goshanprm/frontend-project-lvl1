@@ -4,10 +4,10 @@ import getRandomInt from '../utils';
 
 const descriptionOfGame = 'Find the greatest common divisor of given numbers.';
 
-const valueMin = 1;
-const valueMax = 100;
+const minValue = 1;
+const maxValue = 100;
 
-const gcd = (num1, num2) => {
+const getGcd = (num1, num2) => {
   let divisor = 0;
   if (num1 % num2 === 0) {
     return num2;
@@ -28,10 +28,10 @@ const gcd = (num1, num2) => {
 };
 
 const generatedGameData = () => {
-  const integer1 = getRandomInt(valueMin, valueMax);
-  const integer2 = getRandomInt(valueMin, valueMax);
+  const integer1 = getRandomInt(minValue, maxValue);
+  const integer2 = getRandomInt(minValue, maxValue);
   const actualQuestion = `${integer1} ${integer2}`;
-  const actualAnswer = gcd(integer1, integer2);
+  const actualAnswer = getGcd(integer1, integer2);
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
 };

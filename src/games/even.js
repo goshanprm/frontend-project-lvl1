@@ -4,13 +4,13 @@ import getRandomInt from '../utils';
 
 const descriptionOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const valueMin = 1;
-const valueMax = 100;
+const minValue = 1;
+const maxValue = 100;
 
 const isEven = (num) => num % 2 === 0;
 
 const generatedGameData = () => {
-  const actualQuestion = getRandomInt(valueMin, valueMax);
+  const actualQuestion = getRandomInt(minValue, maxValue);
   const actualAnswer = isEven(actualQuestion) ? 'yes' : 'no';
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
