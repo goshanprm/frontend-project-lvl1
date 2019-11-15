@@ -11,14 +11,14 @@ const maxDiff = 11;
 const progressionLength = 10;
 
 const generatedGameData = () => {
-  const integer = getRandomInt(minValue, maxValue);
+  const firstElement = getRandomInt(minValue, maxValue);
   const diff = getRandomInt(minDiff, maxDiff);
   let progression = '';
   for (let i = 0; i <= progressionLength - 1; i += 1) {
-    progression = `${progression} ${integer + (diff * i)}`;
+    progression = `${progression}${firstElement + (diff * i)} `;
   }
   const indexOfHiddenElement = getRandomInt(0, progressionLength - 1);
-  const actualAnswer = integer + (diff * indexOfHiddenElement);
+  const actualAnswer = firstElement + (diff * indexOfHiddenElement);
   const actualQuestion = progression.replace(`${actualAnswer}`, '..');
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;

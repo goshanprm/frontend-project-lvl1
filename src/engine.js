@@ -9,13 +9,13 @@ export default (descriptionOfGame, generatedGameData) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
 
-  const playRounds = (round) => {
+  const playRound = (round) => {
     let result = '';
 
     if (round === 0) {
       result = `Congratulations, ${userName}!`;
       console.log(result);
-      return result;
+      return '';
     }
 
     const gameData = generatedGameData();
@@ -28,13 +28,13 @@ export default (descriptionOfGame, generatedGameData) => {
     if (answer !== String(actualAnswer)) {
       result = `'${answer}' is wrong answer ;(. Correct answer was '${actualAnswer}'.\nLet's try again, ${userName}!`;
       console.log(result);
-      return result;
+      return '';
     }
 
     result = 'Correct!';
     console.log(result);
-    return playRounds(round - 1);
+    return playRound(round - 1);
   };
 
-  playRounds(roundsCount);
+  playRound(roundsCount);
 };
