@@ -6,19 +6,29 @@
 `$ sudo npm install -g brain-games-goshanprm`
 ## Available games:
 * **Even game**
+
   Answer if shown number is even or not.
+  
   To start: `brain-even`
 * **Calc game**
+
   What is the result of the expression?
+  
   To start: `brain-calc`
 * **GCD game**
+
   Find the greatest common divisor of given numbers.
+  
   To start: `brain-gcd`
 * **Progression game**
+
   What number is missing in given progression?
+  
   To start: `brain-prog`
 * **Prime game**
+
   Answer if shown number is prime or not.
+  
   To start: `brain-prog`
 ---
 ## Brain Even: game proccess videoguide:
