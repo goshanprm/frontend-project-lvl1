@@ -20,11 +20,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const generatedGameData = () => {
+const generateGameData = () => {
   const actualQuestion = getRandomInt(minValue, maxValue);
   const actualAnswer = isPrime(actualQuestion) ? 'yes' : 'no';
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
 };
 
-export default () => playGame(descriptionOfGame, generatedGameData);
+export default () => playGame(descriptionOfGame, generateGameData);

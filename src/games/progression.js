@@ -10,18 +10,18 @@ const minDiff = 2;
 const maxDiff = 11;
 const progressionLength = 10;
 
-const generatedGameData = () => {
+const generateGameData = () => {
   const firstElement = getRandomInt(minValue, maxValue);
   const diff = getRandomInt(minDiff, maxDiff);
   let progression = '';
   for (let i = 0; i <= progressionLength - 1; i += 1) {
     progression = `${progression}${firstElement + (diff * i)} `;
   }
-  const indexOfHiddenElement = getRandomInt(0, progressionLength - 1);
-  const actualAnswer = firstElement + (diff * indexOfHiddenElement);
+  const hiddenElementIndex = getRandomInt(0, progressionLength - 1);
+  const actualAnswer = firstElement + (diff * hiddenElementIndex);
   const actualQuestion = progression.replace(`${actualAnswer}`, '..');
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
 };
 
-export default () => playGame(descriptionOfGame, generatedGameData);
+export default () => playGame(descriptionOfGame, generateGameData);

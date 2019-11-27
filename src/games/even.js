@@ -9,11 +9,11 @@ const maxValue = 100;
 
 const isEven = (num) => num % 2 === 0;
 
-const generatedGameData = () => {
+const generateGameData = () => {
   const actualQuestion = getRandomInt(minValue, maxValue);
   const actualAnswer = isEven(actualQuestion) ? 'yes' : 'no';
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
 };
 
-export default () => playGame(descriptionOfGame, generatedGameData);
+export default () => playGame(descriptionOfGame, generateGameData);

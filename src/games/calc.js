@@ -26,7 +26,7 @@ const calculateExpression = (a, b, operator) => {
   }
 };
 
-const generatedGameData = () => {
+const generateGameData = () => {
   const integer1 = getRandomInt(minValue, maxValue);
   const integer2 = getRandomInt(minValue, maxValue);
   const randomOperator = operators[getRandomInt(0, operationsCount - 1)];
@@ -36,4 +36,4 @@ const generatedGameData = () => {
   return gameData;
 };
 
-export default () => playGame(descriptionOfGame, generatedGameData);
+export default () => playGame(descriptionOfGame, generateGameData);

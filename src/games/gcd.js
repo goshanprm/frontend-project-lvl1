@@ -27,7 +27,7 @@ const getGcd = (num1, num2) => {
   return divisor;
 };
 
-const generatedGameData = () => {
+const generateGameData = () => {
   const integer1 = getRandomInt(minValue, maxValue);
   const integer2 = getRandomInt(minValue, maxValue);
   const actualQuestion = `${integer1} ${integer2}`;
@@ -36,4 +36,4 @@ const generatedGameData = () => {
   return gameData;
 };
 
-export default () => playGame(descriptionOfGame, generatedGameData);
+export default () => playGame(descriptionOfGame, generateGameData);
