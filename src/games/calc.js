@@ -31,7 +31,7 @@ const generateGameData = () => {
   const integer2 = getRandomInt(minValue, maxValue);
   const randomOperator = operators[getRandomInt(0, operationsCount - 1)];
   const actualQuestion = `${integer1} ${randomOperator} ${integer2}`;
-  const actualAnswer = calculateExpression(integer1, integer2, randomOperator);
+  const actualAnswer = `${calculateExpression(integer1, integer2, randomOperator)}`;
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
 };

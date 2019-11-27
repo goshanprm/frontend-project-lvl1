@@ -31,7 +31,7 @@ const generateGameData = () => {
   const integer1 = getRandomInt(minValue, maxValue);
   const integer2 = getRandomInt(minValue, maxValue);
   const actualQuestion = `${integer1} ${integer2}`;
-  const actualAnswer = getGcd(integer1, integer2);
+  const actualAnswer = `${getGcd(integer1, integer2)}`;
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
 };

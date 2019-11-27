@@ -18,7 +18,7 @@ const generateGameData = () => {
     progression = `${progression}${firstElement + (diff * i)} `;
   }
   const hiddenElementIndex = getRandomInt(0, progressionLength - 1);
-  const actualAnswer = firstElement + (diff * hiddenElementIndex);
+  const actualAnswer = `${firstElement + (diff * hiddenElementIndex)}`;
   const actualQuestion = progression.replace(`${actualAnswer}`, '..');
   const gameData = cons(actualQuestion, actualAnswer);
   return gameData;
