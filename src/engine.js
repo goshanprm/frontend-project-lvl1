@@ -11,7 +11,8 @@ export default (descriptionOfGame, generateGameData) => {
 
   const playRound = (round) => {
     if (round === 0) {
-      return console.log(`Congratulations, ${userName}!`);
+      console.log(`Congratulations, ${userName}!`);
+      return;
     }
 
     const gameData = generateGameData();
@@ -22,11 +23,12 @@ export default (descriptionOfGame, generateGameData) => {
     const answer = readlineSync.question('Your answer: ');
 
     if (answer !== actualAnswer) {
-      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${actualAnswer}'.\nLet's try again, ${userName}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${actualAnswer}'.\nLet's try again, ${userName}!`);
+      return;
     }
 
     console.log('Correct!');
-    return playRound(round - 1);
+    playRound(round - 1);
   };
 
   playRound(roundsCount);
