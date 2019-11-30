@@ -7,7 +7,6 @@ const descriptionOfGame = 'What is the result of the expression?';
 const minValue = 1;
 const maxValue = 100;
 const operators = '+-*';
-const operationsCount = operators.length;
 
 const calculateExpression = (a, b, operator) => {
   let expression;
@@ -29,7 +28,7 @@ const calculateExpression = (a, b, operator) => {
 const generateGameData = () => {
   const integer1 = getRandomInt(minValue, maxValue);
   const integer2 = getRandomInt(minValue, maxValue);
-  const randomOperator = operators[getRandomInt(0, operationsCount - 1)];
+  const randomOperator = operators[getRandomInt(0, operators.length - 1)];
   const actualQuestion = `${integer1} ${randomOperator} ${integer2}`;
   const actualAnswer = `${calculateExpression(integer1, integer2, randomOperator)}`;
   const gameData = cons(actualQuestion, actualAnswer);
