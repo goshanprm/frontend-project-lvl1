@@ -32,7 +32,7 @@
   To start: `$ brain-prime`
 ---
 ## Brain Even — game process videoguide:
-[![asciicast](https://asciinema.org/a/iKue71iZ8HVEpC76GUnkz1tHj.svg)](https://asciinema.org/a/iKue71iZ8HVEpC76GUnkz1tHj)
+[![asciicast](https://asciinema.org/a/sgGDFRLjgJqHXUB6bYOaz4L0Z.svg)](https://asciinema.org/a/sgGDFRLjgJqHXUB6bYOaz4L0Z)
 ---
 ## Brain Calc — game process videoguide:
 [![asciicast](https://asciinema.org/a/cFyLZCggcL4VknS7vDVVw4RBR.svg)](https://asciinema.org/a/cFyLZCggcL4VknS7vDVVw4RBR)
