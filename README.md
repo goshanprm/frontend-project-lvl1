@@ -31,17 +31,17 @@
 
   To start: `$ brain-prime`
 ---
-## Brain Even: game proccess videoguide:
-[![asciicast](https://asciinema.org/a/w2lELqhG0sBK1cKIZuRNiT2jG.svg)](https://asciinema.org/a/w2lELqhG0sBK1cKIZuRNiT2jG)
+## Brain Even — game process videoguide:
+[![asciicast](https://asciinema.org/a/iKue71iZ8HVEpC76GUnkz1tHj.svg)](https://asciinema.org/a/iKue71iZ8HVEpC76GUnkz1tHj)
 ---
-## Brain Calc: game proccess videoguide:
+## Brain Calc — game process videoguide:
 [![asciicast](https://asciinema.org/a/cFyLZCggcL4VknS7vDVVw4RBR.svg)](https://asciinema.org/a/cFyLZCggcL4VknS7vDVVw4RBR)
 ---
-## Brain GCD: game proccess videoguide:
+## Brain GCD — game process videoguide:
 [![asciicast](https://asciinema.org/a/EL15f0dr0WRhL9fMvQAlW8iKW.svg)](https://asciinema.org/a/EL15f0dr0WRhL9fMvQAlW8iKW)
 ---
-## Brain Progression: game proccess videoguide:
+## Brain Progression — game process videoguide:
 [![asciicast](https://asciinema.org/a/SNHQzWTIVRbG2lnxqCWS1gGle.svg)](https://asciinema.org/a/SNHQzWTIVRbG2lnxqCWS1gGle)
 ---
-## Brain Prime: game proccess videoguide:
+## Brain Prime — game process videoguide:
 [![asciicast](https://asciinema.org/a/AYIzQcdDJSZDdl673nwjuVlxp.svg)](https://asciinema.org/a/AYIzQcdDJSZDdl673nwjuVlxp)
