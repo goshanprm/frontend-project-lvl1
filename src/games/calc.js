@@ -7,7 +7,7 @@ const descriptionOfGame = 'What is the result of the expression?';
 const minValue = 1;
 const maxValue = 100;
 const operators = '+-*';
-const operationsCount = 3;
+const operationsCount = operators.length;
 
 const calculateExpression = (a, b, operator) => {
   let expression;
