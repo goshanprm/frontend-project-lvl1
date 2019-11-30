@@ -35,13 +35,13 @@
 [![asciicast](https://asciinema.org/a/u9Vg5uqnKmdaA0WlethZOKJq6.svg)](https://asciinema.org/a/u9Vg5uqnKmdaA0WlethZOKJq6)
 ---
 ## Brain Calc — game process videoguide:
-[![asciicast](https://asciinema.org/a/cFyLZCggcL4VknS7vDVVw4RBR.svg)](https://asciinema.org/a/cFyLZCggcL4VknS7vDVVw4RBR)
+[![asciicast](https://asciinema.org/a/GinWVEczrG8x297tHirO1Mmbu.svg)](https://asciinema.org/a/GinWVEczrG8x297tHirO1Mmbu)
 ---
 ## Brain GCD — game process videoguide:
-[![asciicast](https://asciinema.org/a/EL15f0dr0WRhL9fMvQAlW8iKW.svg)](https://asciinema.org/a/EL15f0dr0WRhL9fMvQAlW8iKW)
+[![asciicast](https://asciinema.org/a/0iWvAAmSbvwz1zTZOJ4etxxNw.svg)](https://asciinema.org/a/0iWvAAmSbvwz1zTZOJ4etxxNw)
 ---
 ## Brain Progression — game process videoguide:
-[![asciicast](https://asciinema.org/a/SNHQzWTIVRbG2lnxqCWS1gGle.svg)](https://asciinema.org/a/SNHQzWTIVRbG2lnxqCWS1gGle)
+[![asciicast](https://asciinema.org/a/qFuB216kIn1ZTsgrJNpybPrxD.svg)](https://asciinema.org/a/qFuB216kIn1ZTsgrJNpybPrxD)
 ---
 ## Brain Prime — game process videoguide:
-[![asciicast](https://asciinema.org/a/AYIzQcdDJSZDdl673nwjuVlxp.svg)](https://asciinema.org/a/AYIzQcdDJSZDdl673nwjuVlxp)
+[![asciicast](https://asciinema.org/a/0jfHH957QklQuIKZnKqxJ6bfR.svg)](https://asciinema.org/a/0jfHH957QklQuIKZnKqxJ6bfR)
